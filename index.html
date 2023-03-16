@@ -32,15 +32,37 @@
                         </ul>
                     </div>
                 </div>
-                <div class="arrow-converter"></div>
-                <div class="money-wrapper">
-
+                <div class="arrow-converter">
+                    <img src="./src/assets/arrow-change.svg" alt="">
                 </div>
+                <div class="money-wrapper">
+                    <input type="text" class="amount" readonly placeholder="R$ 5.148,20">
+                    <div class="dropdown">
+                        <div class="selected"><span class="fi fi-br fis"></span>BRL</div>
+
+                        <ul>
+                            <li><span class="fi fi-us fis"></span>USD</li>
+                            <li><span class="fi fi-br fis"></span>BRL</li>
+                            <li><span class="fi fi-eu fis"></span>EUR</li>
+                            <li><span class="fi fi-gb fis"></span>GBP</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
             </div>
         </section>
         <section class="cambio">
             <h2>Taxa de Câmbio</h2>
-            <div class="wrapper"></div>
+            <div class="wrapper" id="chart"></div>
+            <div class="chart-controls">
+                <button>1D</button>
+                <button>5D</button>
+                <button class="active">1M</button>
+                <button>1A</button>
+                <button>5A</button>
+                <button>Máx</button>
+            </div>
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
